@@ -26,5 +26,5 @@ Para executar o aplicativo, basta rodar o arquivo `app.py` com o comando `sudo p
 
 ## Autor
 
-Arthur Nunes Catarina - Analista de Infraestrutura Hydragames
+Arthur Nunes Catarina - Analista de Infraestrutura
 

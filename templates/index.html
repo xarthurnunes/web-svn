@@ -1,0 +1,62 @@
+@@ -4,26 +4,65 @@
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shotcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>WebSVN - HydraGames</title>
+</head>
+<body>
+    <header class="header">Criar Repositório SVN</header>
+    <section class="section">
+        <form method="post" action="/execute">
+            <div class="row">
+                <div class="col">
+                    <label class="col-form-label-sm col-sm-3 text-left" for "team"><strong>Selecione o time:</strong></label>
+                    <input class="col-form-label-sm col-sm-1" type="radio" id="tablet" name="team" value="tablet">
+                    <label class="col-form-label-sm col-sm-1" for="tablet">Tablet</label>
+                    <input class="col-form-label-sm col-sm-1" type="radio" id="cabinet" name="team" value="cabinet">
+                    <label class="col-form-label-sm col-sm-1" for="cabinet">Cabinet</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for "tipo"><strong>Release ou Source:</strong></label>
+                    <input type="radio" id="release" name="tipo" value="release">
+                    <label for="release">Release</label>
+                    <input type="radio" id="source" name="tipo" value="source">
+                    <label for="source">Source</label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <label for="cod_produto"><strong>Digite o código do produto:</strong></label>
+                    <input class="input_text" type="text" id="cod_produto" name="cod_produto" placeholder="ex: SLOT-001G001">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="nome_produto"><strong>Digite o nome do produto:</strong></label>
+                    <input class="input_text" type="text" id="nome_produto" name="nome_produto" placeholder="ex: WILD-FIRE-DRAGON">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col col-align-right">
+                    <button type="reset" class="btn_primary">Limpar</button>
+                    <button type="submit" class="btn_primary">Criar</button>
+                </div>  
+            </div>
+        </form>
+    </section>    
+    <br>
+    <div>
+        <div>&nbsp;</div>
+    </div>
+</body>
+</html>
